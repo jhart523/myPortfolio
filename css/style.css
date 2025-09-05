@@ -16,11 +16,51 @@ nav a {
     text-decoration: none;
     color: #333; /* neutral gray */
     margin-right: 16px;
+    padding-bottom: 2px;
+    position: relative; /* this is for the underline */
+    transition: color 150ms #333;
 }
 
-nav a:first-child {
-    font-weight: 700;
-    margin-right: 30px;
+nav a:last-child { margin-right: 0; }
+nav a:visited { color: #333; }
+
+/* slide-in underline */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #0d6efd;         /* blue */
+  transition: width 180ms ease;
 }
 
+nav a:hover {
+    color: #0d6efd;
+}
 
+nav a:hover::after {
+    width: 100%;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.links a {
+    margin-left: 20px;
+}
+
+.links a:first-child {
+    margin-left: 0;
+}
