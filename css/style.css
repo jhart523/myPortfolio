@@ -72,6 +72,7 @@ nav a:hover::after {
 .hero {
     text-align: center;
     padding: 60px 20px;
+    color: #555;
 }
 
 .hero h1 {
@@ -90,6 +91,7 @@ nav a:hover::after {
     text-decoration: none;
     color: #0d6efd;
     font-weight: 550;
+    display: inline-block;
 }
 
 .social-links a:hover {
@@ -101,4 +103,29 @@ nav a:hover::after {
     height: 30px;
     margin-right: 6px;
     vertical-align: middle;
+}
+
+.projects {
+    max-width: 960px;
+    padding: 60px 20px;
+    margin: 0 auto;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.project {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
