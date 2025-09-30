@@ -20,7 +20,7 @@ nav a {
     margin-right: 16px;
     padding-bottom: 2px;
     position: relative; /* this is for the underline */
-    transition: color 150ms #333;
+    transition: color 150ms ease;
 }
 
 nav a:last-child { margin-right: 0; }
