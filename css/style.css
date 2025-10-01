@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body { 
     background-color : #f8f9fa; /* this is a light gray */
     margin: 0;
@@ -12,6 +16,9 @@ nav {
     background: #fff;
     padding: 12px 16px;
     border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav a {
@@ -106,6 +113,8 @@ nav a:hover::after {
     vertical-align: middle;
 }
 
+/* Project section */
+
 .projects {
     max-width: 960px;
     padding: 60px 20px;
@@ -128,5 +137,22 @@ nav a:hover::after {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Contact section */
+
+.contact {
+    max-width: 750px;
+    padding: 30px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    background: #fff;
+}
+
+.contact-links {
+    
 }
